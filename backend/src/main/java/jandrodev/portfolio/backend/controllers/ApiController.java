@@ -4,8 +4,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import jandrodev.portfolio.backend.models.entity.Disenio;
+import jandrodev.portfolio.backend.models.entity.Proyecto;
 import jandrodev.portfolio.backend.models.entity.Tecnologia;
 import jandrodev.portfolio.backend.services.DisenioService;
+import jandrodev.portfolio.backend.services.ProyectoService;
 import jandrodev.portfolio.backend.services.TecnologiaService;
 
 import java.util.List;
@@ -23,6 +25,8 @@ public class ApiController {
     private TecnologiaService tecnologiaService;
     @Autowired
     private DisenioService disenioService;
+    @Autowired
+    private ProyectoService proyectoService;
     
     @GetMapping("/tecnologias")
     public ResponseEntity<List<Tecnologia>> tecnologies() {
@@ -32,6 +36,11 @@ public class ApiController {
     @GetMapping("/diseños")
     public ResponseEntity<List<Disenio>> designs() {
         return ResponseEntity.status(HttpStatus.OK).body(disenioService.getDesigns());
+    }
+
+    @GetMapping("/proyectos")
+    public ResponseEntity<List<Proyecto>> projects() {
+        return ResponseEntity.status(HttpStatus.OK).body(proyectoService.getProjects());
     }
     
 }
