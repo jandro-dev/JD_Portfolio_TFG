@@ -6,7 +6,7 @@
 
 - [ ] Crear proyecto springboot con dependencias minimas de lombok, spring web y spring mongodb
   
-- [ ] Montar la api estructurada desde mongodb incluyendo las rutas de las imagenes ( referencia: **jdportfolio.onrender.com** )*
+- [x] Montar la api estructurada desde mongodb incluyendo las rutas de las imagenes ( referencia: **jdportfolio.onrender.com** )*
 
 * En proyectos hacer un campo boolean para colaborativos
 * En setup recordar que tiene componentes (array de objetos) y caracteristicas dentro de componentes (array de strings)
