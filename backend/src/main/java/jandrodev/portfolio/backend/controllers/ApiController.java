@@ -3,7 +3,9 @@ package jandrodev.portfolio.backend.controllers;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import jandrodev.portfolio.backend.models.entity.Disenio;
 import jandrodev.portfolio.backend.models.entity.Tecnologia;
+import jandrodev.portfolio.backend.services.DisenioService;
 import jandrodev.portfolio.backend.services.TecnologiaService;
 
 import java.util.List;
@@ -19,11 +21,17 @@ public class ApiController {
     
     @Autowired
     private TecnologiaService tecnologiaService;
+    @Autowired
+    private DisenioService disenioService;
     
     @GetMapping("/tecnologias")
     public ResponseEntity<List<Tecnologia>> tecnologies() {
         return ResponseEntity.status(HttpStatus.OK).body(tecnologiaService.getTecnologies());
     }
-    
 
+    @GetMapping("/diseños")
+    public ResponseEntity<List<Disenio>> designs() {
+        return ResponseEntity.status(HttpStatus.OK).body(disenioService.getDesigns());
+    }
+    
 }
