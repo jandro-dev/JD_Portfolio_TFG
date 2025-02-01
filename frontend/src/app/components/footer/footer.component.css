@@ -1,0 +1,73 @@
+.redesSociales {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+.contenedorRS {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #410753;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.redSocial:hover {
+  background-color: #C69DD1;
+  transition-duration: .3s;
+}
+
+.redSocial:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.imagenRS {
+  width: 17px;
+}
+
+.imagenRS path {
+  fill: rgb(255, 255, 255);
+}
+
+.redSocial:hover .imagenRS {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 950px) {
+  .redesSociales {
+    margin-right: 1.5em;
+  }
+  
+  .contenedorRS {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 350px) {
+  .contenedorRS {
+    width: 36px;
+    height: 36px;
+  }
+}
