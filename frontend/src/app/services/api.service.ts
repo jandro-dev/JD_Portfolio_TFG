@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class ApiService {
   // Consumicion de la api de springboot
-  private url = 'https://localhost:9325/api';
+  private url = 'http://localhost:9325/api';
 
   constructor(private http: HttpClient) {}
 

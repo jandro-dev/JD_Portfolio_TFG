@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/api/api.component';
 import { CommonModule } from '@angular/common';
 import { LogocardComponent } from '../logocard/logocard.component';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'componenteCarrusel',
