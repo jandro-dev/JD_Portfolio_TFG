@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { BotonComponent } from '../boton/boton.component';
 
 @Component({
-  selector: 'app-contacto',
+  selector: 'componenteContacto',
   standalone: true,
-  imports: [],
+  imports: [BotonComponent],
   templateUrl: './contacto.component.html',
-  styleUrl: './contacto.component.css'
+  styleUrl: './contacto.component.css',
 })
-export class ContactoComponent {
-
-}
+export class ContactoComponent {}
