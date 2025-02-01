@@ -1,0 +1,60 @@
+.entrada {
+    background-image: url("/assets/views/contact.webp");
+    height: 65vh;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+.informacion a {
+    color: black;
+}
+
+.formularioContacto {
+    min-height: 55vh;
+    padding: 50px;
+    text-align: center;   
+}
+
+.contenedorContacto {
+    max-width: 800px;
+    margin: 0 auto;   
+}
+
+.posicionContacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+.formulario, .informacion {
+    text-align: left;
+}
+
+.formulario {
+    margin-left: 3em;
+}
+
+.campoFormulario {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .posicionContacto {
+        grid-template-columns: 1fr;
+    }
+
+    .informacion h3 {
+        text-align: center;
+    }
+
+    .formulario {
+        margin-left: 0em;
+    }
+
+    button {
+        margin: 0 auto;
+        display: block;
+    }
+}

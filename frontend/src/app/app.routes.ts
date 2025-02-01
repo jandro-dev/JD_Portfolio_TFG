@@ -2,9 +2,9 @@ import { Routes } from '@angular/router';
 import { InicioComponent } from './views/inicio/inicio.component';
 import { SobremiComponent } from './views/sobremi/sobremi.component';
 import { PortfolioComponent } from './views/portfolio/portfolio.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
 import { SetupComponent } from './views/setup/setup.component';
 import { NotfoundComponent } from './views/notfound/notfound.component';
+import { ContactoComponent } from './views/contacto/contacto.component';
 
 export const routes: Routes = [
   {

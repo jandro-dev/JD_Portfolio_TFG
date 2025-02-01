@@ -1,1 +1,83 @@
-<p>contacto works!</p>
+<!-- ENTRADA CONTACTO -->
+<div class="fondoEntrada entrada">
+    <div class="contenidoEntrada text-center">
+        <componenteBoton
+            texto="CONTACTA CONMIGO" 
+            colorBoton="#fff"
+            colorHover="#410753"
+            (click)="scrollToContacto($event)"
+            url="contacto"/>
+    </div>
+</div>
+
+<!-- FORMULARIO CONTACTO + INFORMACION -->
+<div class="formularioContacto mt-5 seccion" id="seccionContacto">
+    <div class="contenedorContacto">
+        <div class="posicionContacto">
+            <div class="informacion">
+                <h3 class="color-main mb-4">¿Como contactarme?</h3>
+                <p>Si quieres contactarme y asegurarte de recibir una respuesta en un corto periodo de tiempo, 
+                    el mejor canal es <a href="https://mypublicinbox.com/jandrodev" target="_blank">MyPublicInbox</a></p>
+                <p>Gracias a <a href="https://mypublicinbox.com/jandrodev" target="_blank">MyPublicInbox</a> 
+                    me ayudas a optimizar el tiempo que empleo en leer y contestar un mensaje. 
+                    Su precio es parecido a tomarte un café conmigo, lo que conlleva a que me estes apoyando y ayudando 
+                    a hacer sostenible mi proyecto personal.</p>
+                <p>Otra opción con la cual puedes ponerte en contacto conmigo es utilizando el siguiente formulario o enviándome un
+                     email a <a href="mailto:jandro.develop@gmail.com">jandro.develop&commat;gmail.com</a>.</p>
+                <p>También puedes encontrarme en <a href="https://github.com/jandro-dev" target="_blank">Github</a>, 
+                    <a href="https://twitter.com/jandro_dev" target="_blank">Twitter</a>, 
+                    <a href="https://www.instagram.com/jandro_dev" target="_blank">Instagram</a> o 
+                    <a href="https://es.linkedin.com/in/alejandro-fp" target="_blank">Linkedin</a>.</p>
+            </div>
+            <form action="https://formspree.io/f/xqkrgqzd" method="POST">
+                <div class="formulario">
+                <div class="campoFormulario">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre">
+                </div>
+                <div class="campoFormulario">
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo">
+                </div>
+                <div class="campoFormulario">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" name="asunto">
+                </div>
+                <div class="campoFormulario">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje"></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- BARRA INFORMACION -->
+<div class="p-4 bgcolor-main mt-5 contenedorCentrado flex-column flex-md-row">
+    <h5 class="text-white me-md-5 pe-md-5 mb-3 mb-md-0">¿Quieres saber mas sobre mi?</h5>
+    <div class="d-inline-flex ms-md-5 ps-md-5">
+        <componenteBoton class="me-1 me-sm-2"
+            texto="CONOCEME MEJOR"
+            colorBoton="#fff"
+            colorHover="#410753"
+            url="/jandrodev"/>
+        <componenteBoton class="ms-1 ms-sm-2"
+            texto="VER PORTFOLIO"
+            colorBoton="#fff"
+            colorHover="#410753"
+            url="/portfolio"/>
+    </div>
+</div>
+
+<!-- CORREOS -->
+<div class="mt-5 mb-5 contenedorCentrado flex-column text-uppercase">
+    <img src="assets/socials/email.svg" alt="Icono email" width="50em" class="svgMorado">
+    <a href="https://mypublicinbox.com/jandrodev" target="_blank">
+        <span class="color-main">mypublicinbox.com/jandrodev</span>
+    </a>
+    <a href="mailto:jandro.develop@gmail.com">
+        <span class="color-main">jandro.develop&commat;gmail.com</span>
+    </a>
+</div>
