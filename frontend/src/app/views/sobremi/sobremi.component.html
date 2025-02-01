@@ -1,1 +1,87 @@
-<p>sobremi works!</p>
+<!-- SOBRE MI -->
+<div class="fondoEntrada entrada">
+    <div class="container">
+        <div class="contenedorEntrada text-uppercase text-white">
+            <span class="fs-4">Hola, mi nombre es</span><br>
+            <span class="fs-2"><b>Alejandro Franco</b></span>
+        </div>
+    </div>
+</div>
+
+<!-- BARRA PROFESION -->
+<div class="p-3 bgcolor-main">
+    <div class="contenedorCentrado flex-column text-center text-white text-uppercase">
+        <span>Diseñador gráfico</span>
+        <span style="text-wrap: balance;">Full-stack developer android - web</span>
+    </div>
+</div>
+
+<!-- MI HISTORIA -->
+<div class="container mt-5 pt-lg-5">
+    <div class="contenedorCentrado flex-column flex-lg-row ms-xl-5 ps-xl-5">
+        <div class="col-4 col-sm-3 col-xl-2 ms-5 me-5 mt-lg-5">
+            <img src="assets/logos/logoText.svg" alt="Logo Sobre Mi" width="100%" class="svgMorado">
+        </div>
+        <div class="col-11 col-lg-4 ms-5 me-5 mt-2 mt-lg-0">
+            <h1 class="color-main text-center text-lg-start">Mi Historia</h1>
+            <p>Mi nombre es Alejandro Franco, soy un informático y diseñador que le encanta aprender día a día.</p>
+            <p>A partir de 2019 emprendí mi nuevo camino en la informática entrando en la FP de Administración de 
+                Sistemas. Continue por las ramas de Ciberseguridad, Big Data y Desarrollo de Aplicaciones.</p>
+            <p>Actualmente dedico mi tiempo a mejorar mi marca JandroDev para ser un desarrollador freelance asique 
+                si buscas profesionalidad y dedicación, ¡cuenta conmigo!</p>
+        </div>
+    </div>
+  </div>
+
+<hr class="mt-5 color-main">
+
+<!-- HABILIDADES -->
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="color-main">Mis habilidades</h1>
+        <p>Mis principales competencias son el desarrollo de software, sobre todo, en aplicaciones Android y páginas web
+            junto a la creación de UI y UX utilizados en mis aplicaciones y webs. Poseo conocimientos 
+            sobre diseño gráfico, ciberseguridad, administración de sistemas y big data.
+        </p>
+    </div>
+    <div class="mt-5 row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4 mb-4 skillcard">
+            <componenteSkillCard 
+                bgColor="#410753" 
+                urlImagen="assets/skills/androidSkillCard.svg" 
+                habilidad="ANDROID" 
+                [tecnologias]="['Kotlin', 'Jetpack Compose', 'Android Studio', 'Git', 'Figma', 'Photoshop']"/>
+        </div>
+        <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+            <componenteSkillCard 
+                bgColor="#410753" 
+                urlImagen="assets/skills/webSkillCard.svg" 
+                habilidad="WEB" 
+                [tecnologias]="['Angular', 'JavaScript', 'Node.js', 'Visual Studio Code', 'HTML', 'PHP', 'CSS', 'MySQL', 'Figma', 'Photoshop']"/>
+        </div>
+    </div>
+</div>
+
+<!-- BARRA PORTFOLIO -->
+<div class="mt-5 p-4 bgcolor-main contenedorCentrado flex-column flex-md-row text-center">
+    <h5 class="text-white me-md-5 pe-md-5 mb-3 mb-md-0">Mis proyectos y diseños</h5>
+    <div class="ms-md-5 ps-md-5">
+        <componenteBoton
+            texto="VER PORTFOLIO"
+            colorBoton="#fff"
+            colorHover="#410753"
+            url="/portfolio"/>
+    </div>
+</div>
+
+<!-- EXPERIENCIA EMPRESAS -->
+<div class="mt-4 mb-4">
+    <div class="contenedorCentrado">
+        <img src="assets/companies/fiware.webp" alt="Fiware Space" width="150em">
+    </div>
+</div>
+
+<hr class="color-main">
+
+<!-- CONTACTO -->
+<componenteContacto/>

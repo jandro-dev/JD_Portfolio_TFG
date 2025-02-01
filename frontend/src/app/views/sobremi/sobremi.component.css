@@ -1,0 +1,23 @@
+.entrada {
+    background-image: url("/assets/views/aboutme.webp");
+    height: 60vh;
+}
+
+.contenedorEntrada {
+    position: absolute;
+    top: 15%;
+}
+
+@media (max-width: 1200px) {
+    .contenedorEntrada {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .contenedorEntrada span {
+        text-align: center;
+        display: block;
+        margin-top: -0.5em;
+    }
+}
