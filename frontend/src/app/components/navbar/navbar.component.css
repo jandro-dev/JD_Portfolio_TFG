@@ -1,0 +1,120 @@
+.navbar {
+    transition: background-color 0.5s ease;
+}
+
+.nav-link {
+    color: white;
+    position: relative;
+    overflow: hidden; 
+}
+
+.navbar.scrolled {
+    background-color: white; 
+}
+
+.navbar.scrolled .nav-link {
+    color: #410753;
+}
+
+.navbar.scrolled .nav-link .main {
+    color: #C69DD1; 
+}
+
+.navbar.scrolled .nav-link .secondary {
+    color: #410753; 
+}
+
+.nav-link:not(.no-border)::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease; 
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.navbar.scrolled .nav-link::before {
+    background-color: #410753;
+}
+
+/* Boton toggle menu movil,tablet: https://uiverse.io/adamgiebl/funny-bear-15 */
+
+@media (min-width: 992px) {
+    #barra1,#barra2,#barra3 {
+        display: none;
+    }
+}
+
+#menu {
+  display: none;
+}
+
+.cambio {
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition-duration: .5s;
+}
+
+.barras {
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+#barra2 {
+  transition-duration: .8s;
+}
+
+#barra1,#barra3 {
+  width: 100%;
+}
+
+#menu:checked + .cambio .barras {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#menu:checked + .cambio #barra2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#menu:checked + .cambio #barra1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#menu:checked + .cambio #barra3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#menu:checked + .cambio {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}
+
+.navbar.scrolled #barra2 {
+    background-color: #C69DD1;
+}
+
+.navbar.scrolled #barra1,
+.navbar.scrolled #barra3 {
+    background-color: #410753;
+}

@@ -1,1 +1,33 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand nav-link no-border" href="">
+            <span class="main">Jandro</span><span class="secondary">Dev</span></a>
+
+        <input id="menu" type="checkbox" (click)="alternarMenu()">
+        <label class="toggle cambio" for="menu">
+            <div id="barra1" class="barras"></div>
+            <div id="barra2" class="barras"></div>
+            <div id="barra3" class="barras"></div>
+        </label>
+        
+        <div class="collapse navbar-collapse justify-content-end" [ngClass]="{'show': !isMenuMovil}" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jandrodev">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://jandro.pages.dev/" target="_blank">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
