@@ -1,1 +1,154 @@
-/* You can add global styles to this file, and also import other style files */
+/* ESTILOS GLOBALES */
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: "K2D";
+    scrollbar-width: thin;
+    scrollbar-color: #C69DD1 #410753;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "K2D";
+    src: url(assets/fonts/K2D-SemiBold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.svgMorado {
+    filter: invert(12%) sepia(66%) saturate(2031%) hue-rotate(266deg) brightness(91%) contrast(115%);
+}
+
+.svgMorado2 {
+    filter: invert(11%) sepia(27%) saturate(2854%) hue-rotate(256deg) brightness(89%) contrast(106%);
+}
+
+.svgBlanco {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(294deg) brightness(104%) contrast(101%);
+}
+
+.seccion {
+    scroll-margin-top: 70px;
+}
+
+.color-main {
+    color: #410753;
+}
+
+.color-main2 {
+    color: #2D0C37;
+}
+
+.color-secondary {
+    color: #C69DD1;
+}
+
+.color-secondary2 {
+    color: #F4CCFE;
+}
+
+.bgcolor-main {
+    background-color: #410753;
+}
+
+.bgcolor-main2 {
+    background-color: #2D0C37;
+}
+
+.bgcolor-secondary {
+    background-color: #C69DD1;
+}
+
+.bgcolor-secondary2 {
+    background-color: #F4CCFE;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+img {
+    pointer-events: none;
+    user-select: none;
+}
+
+p {
+    color: #626262;
+}
+
+label {
+    font-size: 1.2em;
+    color: #410753;
+}
+
+textarea {
+    min-height: 4em;
+    max-height: 9em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    color: #410753;
+}
+
+input, textarea, button {
+    border-radius: 8px !important;
+    border: 1px solid #410753;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #C69DD1;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #410753;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #410753;
+}
+
+.fondoEntrada {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contenidoEntrada {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.contenedorCentrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCard {
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contenedorCard, .card-carousel, .logocard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
