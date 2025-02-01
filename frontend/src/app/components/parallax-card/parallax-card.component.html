@@ -1,1 +1,11 @@
-<p>parallax-card works!</p>
+<div class="parallaxCard">
+    <a href="{{ url }}" target="_blank">
+        <div class="cover">
+            <div class="imagenFondo" [style.background-image] ="'url(' + imagen + ')'"></div>
+        </div>
+        <div class="descripcion">
+            <h2 class="color-main">{{ titulo }}</h2>
+            <p>{{ descripcion }}</p>
+        </div>
+    </a>
+</div>
