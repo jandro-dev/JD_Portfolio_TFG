@@ -1,0 +1,102 @@
+.entrada {
+    background-image: url("/assets/views/inicio.webp"); 
+    height: 100vh;
+}
+
+.fotoPerfil {
+    mask-image: linear-gradient(black 80%, transparent);
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+}
+
+.flechaPerfil {
+    color: white; 
+    font-size: 2em; 
+    padding: 10px
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.2em;
+    height: 1.3em;
+    background-color: white;
+    animation: blink 0.3s infinite;
+}
+
+/* Alternar opacidad para la animacion del cursor */
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ANDROID, WEB, DISEÑO */
+
+.contenedorCentrado div {
+    margin: 0 1em;
+}
+
+.contenedorCentrado img {
+    display: block;
+    margin: 0 auto;
+}
+
+.barra {
+    margin-right: 1em;
+    width: 0.1em;
+    height: 5em;
+    background-color: white;
+    opacity: 0.1;
+}
+
+.opcion {
+    cursor: pointer;
+    padding-right: 1em;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.opcion.clicked {
+    opacity: 1;
+}
+
+.cambiarImg {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+}
+
+.habilidad {
+    border: 0.5em solid #410753;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.habilidad img {
+    width: 5em;
+    height: 5em;
+}
+
+.habilidad h3, .habilidad p {
+    text-wrap: balance;
+}
+
+.habilidad p {
+    margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+    .habilidad {
+        margin-top: 2em;
+        padding: 2em;
+    }
+
+    .habilidad p {
+        margin-bottom: 3em;
+    }
+}

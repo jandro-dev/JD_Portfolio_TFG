@@ -1,1 +1,94 @@
-<p>inicio works!</p>
+<!-- INICIO -->
+<div class="fondoEntrada entrada">
+    <div class="contenidoEntrada text-center text-white">
+        <img src="assets/views/perfil.webp" alt="Logo" class="fotoPerfil">
+        <h1>Bienvenido a JandroDev</h1>
+        <span class="textoAnimado fs-3 text-uppercase"></span><span class="cursor"></span>
+        <div class="mt-5 pt-5">
+            <a href="" (click)="scrollToPerfil($event)" class="flechaPerfil"><i class='bx bxs-chevron-down'></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- DESCRIPCION PERFIL + CV -->
+<div class="mt-5 pt-5 text-center col-11 col-sm-10 col-md-8 col-lg-6 col-xl-5 mx-auto seccion" id="perfil">
+    <div class="text-uppercase">
+        <h5 class="color-secondary">Desarrollo de aplicaciones android y web</h5>
+        <h1 class="color-main pt-4 bold">{{ textos[0] }}, full-stack developer</h1>
+    </div>
+    <p class="mt-5 pb-3">JandroDev es una marca personal que plasma mi ilusión y ganas de seguir creciendo
+        y desarrollando software. Actualmente me estoy especializando en Front-End con Angular junto al
+        desarrollo de aplicaciones Android.
+    </p>
+    <img src="assets/logos/logo.svg" alt="Logo" width="20%" class="svgMorado">
+    <componenteBoton class="mt-5 pb-5 contenedorCentrado"
+        texto="Descargar CV" 
+        colorBoton="#410753"
+        (click)="abrirNuevaVentana($event,'https://drive.google.com/file/d/1MYbVUaI6ToyBtf3HxddkpAL4tptQy6I7/view?usp=sharing')"/>
+</div>
+
+<!-- BARRA TECNOLOGIAS -->
+<div class="mt-5 p-3 bgcolor-main text-center text-white text-uppercase">
+    <h2>tecnologias</h2>
+</div>
+
+<!-- CARRUSEL -->
+<div class="mt-5 pt-4">
+  <componenteCarrusel/>
+</div>
+
+<!-- BARRA HABILIDADES -->
+<div class="mt-5 p-3 bgcolor-main">
+    <div class="contenedorCentrado text-white text-uppercase">
+        <div class="opcion clicked">
+            <img src="assets/skills/appSkill.svg" alt="App" width="40em" class="svgBlanco">
+            <span>App</span>
+        </div>
+        <span class="barra"></span>
+        <div class="opcion">
+            <img src="assets/skills/designSkill.svg" alt="Web" width="40em" class="svgBlanco">
+            <span>Diseño</span>
+        </div>
+        <span class="barra"></span>
+        <div class="opcion">
+            <img src="assets/skills/webSkill.svg" alt="Diseño" width="40em" class="svgBlanco">
+            <span>Web</span>
+        </div>
+    </div>  
+</div>
+
+<!-- HABILIDADES -->
+<div class="mt-5">
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6">
+            <img src="assets/skills/app.webp" alt="App" class="cambiarImg" loading="lazy">
+        </div>
+        <div class="col-lg-6 habilidad text-center">
+            <img src="assets/skills/appSkill.svg" alt="Imagen Skill" class="cambiarSkill svgMorado mt-3">
+            <h3 class="color-main text-uppercase bold mt-3">{{ titulo }}</h3>
+            <p>{{ textoSkill }}</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- BARRA INFORMACION -->
+<div class="mt-5 p-3 bgcolor-main contenedorCentrado flex-column flex-lg-row text-white text-center">
+    <h5 class="me-lg-5 pe-lg-5 mb-3 mb-lg-0">¿Quieres ver mis proyectos y diseños?</h5>
+    <div class="d-inline-flex ms-lg-5 ps-lg-5">
+        <componenteBoton class="me-1 me-sm-2"
+            texto="VER PORTFOLIO"
+            colorBoton="#fff"
+            colorHover="#410753"
+            url="/portfolio"/>
+        <componenteBoton class="ms-1 ms-sm-2"
+            texto="CONOCEME MEJOR"
+            colorBoton="#fff"
+            colorHover="#410753"
+            url="/jandrodev"/>
+    </div>
+</div>
+
+<!-- SECCION CONTACTO -->
+<componenteContacto/>
