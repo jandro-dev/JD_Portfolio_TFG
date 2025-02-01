@@ -1,1 +1,10 @@
-<p>skill-card works!</p>
+<div [style.background-color]="bgColor" class="contenedorCard alturaCard">
+    <img [src]="urlImagen" alt="Imagen Habilidad" class="sizeImagen mb-5 svgBlanco">
+    <h4 class="color-secondary">{{ habilidad }}</h4>
+    <span class="text-center text-white mt-3 ms-5 me-5">
+        <ng-container *ngFor="let tecnologia of tecnologias; let ultimo = last">
+            {{ tecnologia }}
+            <ng-container *ngIf="!ultimo"> | </ng-container>
+        </ng-container>
+    </span>
+</div>

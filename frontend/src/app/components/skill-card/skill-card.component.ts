@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-skill-card',
+  selector: 'componenteSkillCard',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './skill-card.component.html',
-  styleUrl: './skill-card.component.css'
+  styleUrl: './skill-card.component.css',
 })
 export class SkillCardComponent {
 
+  // Entradas por defecto
+  @Input() urlImagen: string = '';
+  @Input() bgColor: string = 'black';
+  @Input() habilidad: string = '';
+  @Input() tecnologias: string[] = [];
+  
 }
