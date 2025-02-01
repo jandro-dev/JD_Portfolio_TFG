@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class ApiComponent {
+export class ApiService {
   // Consumicion de la api de springboot
   private url = 'https://localhost:9325/api';
 

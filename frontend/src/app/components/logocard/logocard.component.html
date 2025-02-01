@@ -1,1 +1,4 @@
-<p>logocard works!</p>
+<div [style.background-color]="bgColor" class="contenedorCard alturaCard" (mouseenter)="entradaHover()" (mouseleave)="salidaHover()">
+    <img [src]="urlImagen" alt="Imagen Tecnologia" class="size" [style.transform]="isHover ? 'translateY(-10px)' : 'none'">
+    <div class="texto">{{ mensaje }}</div>
+</div>

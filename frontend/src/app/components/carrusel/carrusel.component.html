@@ -1,1 +1,12 @@
-<p>carrusel works!</p>
+<div class="contenedor">
+    <div class="card-carousel">
+        <div *ngFor="let tecnologia of tecnologias" class="logocard">
+            <componenteLogoCard 
+                [bgColor]="'#410753'" 
+                [urlImagen]="'https://localhost:9325/images/' + tecnologia.rutaImagen" 
+                [anios]="tecnologia.anios" 
+                [meses]="tecnologia.meses"/>
+            <p class="text-center color-main" style="font-size: 1.2em;">{{ tecnologia.nombre }}</p>
+        </div>
+    </div>
+</div>

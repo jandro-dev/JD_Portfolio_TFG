@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { BotonComponent } from './components/boton/boton.component';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BotonComponent],
+  imports: [RouterOutlet, CarruselComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
-export class AppComponent {
-}
+export class AppComponent {}
