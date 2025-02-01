@@ -1,0 +1,65 @@
+/* Boton https://uiverse.io/escannord/lovely-gecko-23 */
+
+.button {
+  --color: #410753;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: var(--color);
+  font-weight: bolder;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+.button,
+.text,
+.button::before,
+.button::after {
+  transition: all 0.4s, box-shadow 0.2s;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  border-radius: 5px;
+  border: solid 3px var(--color);
+  border-right-color: transparent;
+  background-color: transparent;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  border-radius: 5px;
+  border: solid 3px var(--color);
+  border-left-color: transparent;
+  background-color: transparent;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button:hover:before,
+.button:hover:after {
+  width: 50% !important;
+}
+
+.button:active {
+  box-shadow: 0px 0px 0px 7px rgba(79, 78, 105, 0.295);
+}

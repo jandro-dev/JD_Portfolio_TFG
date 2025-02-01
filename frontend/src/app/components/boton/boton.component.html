@@ -1,1 +1,9 @@
-<p>boton works!</p>
+<a  href="{{ url }}">
+  <div class="button" 
+    [style.--color]="colorBoton"
+    [style.color]="isHover ? colorHover : colorBoton"
+    (mouseenter)="entradaHover()"
+    (mouseleave)="salidaHover()">
+  <span class="text">{{ texto }}</span>
+  </div>
+</a>
