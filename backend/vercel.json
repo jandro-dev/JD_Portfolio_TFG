@@ -2,8 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "backend/target/backend-0.0.1-SNAPSHOT.jar",
-      "use": "@vercel/java"
+      "src": "Dockerfile",
+      "use": "@vercel/docker"
     }
   ],
   "routes": [
