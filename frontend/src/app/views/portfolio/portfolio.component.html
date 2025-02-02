@@ -1,1 +1,66 @@
-<p>portfolio works!</p>
+<!-- ENTRADA PORTFOLIO -->
+<div class="fondoEntrada entrada">
+    <div class="contenidoEntrada text-center text-white text-uppercase">
+        <h1>Portfolio</h1>
+    </div>
+</div>
+
+<div class="p-3 bgcolor-main text-center text-white">
+    <h2>Mis proyectos</h2>
+</div>
+
+<div class="contenedorTarjetas">  
+    <ng-container *ngIf="proyectos">
+        <ng-container *ngFor="let proyecto of proyectos">
+            <ng-container *ngIf="!proyecto.colaborativo">
+                <parallaxCard
+                    [imagen]="'http://localhost:9325/images/' + proyecto.rutaImagen"
+                    [titulo]="proyecto.nombre"
+                    [descripcion]="proyecto.descripcion"
+                    [url]="proyecto.link"
+                ></parallaxCard>
+            </ng-container>
+        </ng-container>
+    </ng-container>
+</div>
+
+<div class="mt-5 p-3 bgcolor-main text-center text-white">
+    <h2>Proyectos Colaborativos</h2>
+</div>
+
+<div class="contenedorTarjetas">  
+    <ng-container *ngIf="proyectos">
+        <ng-container *ngFor="let proyecto of proyectos">
+            <ng-container *ngIf="proyecto.colaborativo">
+                <parallaxCard
+                    [imagen]="'http://localhost:9325/images/' + proyecto.rutaImagen"
+                    [titulo]="proyecto.nombre"
+                    [descripcion]="proyecto.descripcion"
+                    [url]="proyecto.link"
+                ></parallaxCard>
+            </ng-container>
+        </ng-container>
+    </ng-container>
+</div>
+
+<div class="mt-5 p-3 bgcolor-main text-center text-white">
+    <h2>Diseños</h2>
+</div>
+
+<div class="contenedorTarjetas">  
+    <ng-container *ngIf="disenios">
+        <ng-container *ngFor="let disenio of disenios">
+            <parallaxCard
+                [imagen]="'http://localhost:9325/images/' + disenio.rutaImagen"
+                [titulo]="disenio.nombre"
+                [descripcion]="disenio.fecha"
+                [url]="disenio.link"
+            ></parallaxCard>
+        </ng-container>
+    </ng-container>
+</div>
+
+<hr class="color-main mt-5">
+
+<!-- CONTACTO -->
+<componenteContacto/>

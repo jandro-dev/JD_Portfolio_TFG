@@ -1,0 +1,11 @@
+.entrada {
+    background-image: url("/assets/views/portfolio.webp");
+    height: 60vh;
+}
+
+.contenedorTarjetas {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
