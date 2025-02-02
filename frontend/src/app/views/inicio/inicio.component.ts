@@ -53,45 +53,58 @@ export class InicioComponent implements OnInit {
       let imagen = document.querySelector('.cambiarImg') as HTMLImageElement;
       let icono = document.querySelector('.cambiarSkill') as HTMLImageElement;
 
-      Array.prototype.forEach.call(opcionHabilidad, (div: HTMLElement) => {
+      // Precargar imágenes
+      const imagenesPrecargadas = [
+        'assets/skills/app.webp',
+        'assets/skills/web.webp',
+        'assets/skills/design.webp',
+        'assets/skills/appSkill.svg',
+        'assets/skills/webSkill.svg',
+        'assets/skills/designSkill.svg',
+      ];
+
+      imagenesPrecargadas.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+
+      // Evento para cambiar la imagen al hacer clic
+      opcionHabilidad.forEach((div) => {
         div.addEventListener('click', () => {
-          let link = div.querySelector('span');
+          // Eliminar la clase 'clicked' de todos los elementos
+          opcionHabilidad.forEach((element) => {
+            element.classList.remove('clicked');
+          });
 
-          // Eliminar la clase clicked de todos los elementos
-          Array.prototype.forEach.call(
-            opcionHabilidad,
-            (element: HTMLElement) => {
-              element.classList.remove('clicked');
-            }
-          );
-
-          // Agregar la clase clicked solo al elemento clickeado
+          // Agregar la clase 'clicked' al elemento clickeado
           div.classList.add('clicked');
 
+          const linkText = div.querySelector('span')?.textContent?.trim();
+
           // Modifica el contenido segun la opcion elegida
-          switch (link?.textContent) {
+          switch (linkText) {
             case 'App':
               this.titulo = 'Aplicaciones android';
               this.textoSkill =
                 'Hago aplicaciones para los sistemas operativos de Google. Creo apps en Android para móviles usando Kotlin y Jetpack Compose.';
-              imagen.src = 'assets/skills/app.webp';
-              icono.src = 'assets/skills/appSkill.svg';
+              imagen.src = imagenesPrecargadas[0];
+              icono.src = imagenesPrecargadas[3];
               break;
 
             case 'Web':
               this.titulo = 'Páginas web y backend';
               this.textoSkill =
                 'Desarrollo y mantengo páginas web con Angular y NodeJS. También creo Back-End utilizando Spring MVC y MySQL.';
-              imagen.src = 'assets/skills/web.webp';
-              icono.src = 'assets/skills/webSkill.svg';
+              imagen.src = imagenesPrecargadas[1];
+              icono.src = imagenesPrecargadas[4];
               break;
 
             case 'Diseño':
               this.titulo = 'Diseño gráfico';
               this.textoSkill =
                 'Realizo marcas y logotipos usando Photoshop. El diseño lo aplico además en aplicaciones móviles y páginas web utilizando Figma.';
-              imagen.src = 'assets/skills/design.webp';
-              icono.src = 'assets/skills/designSkill.svg';
+              imagen.src = imagenesPrecargadas[2];
+              icono.src = imagenesPrecargadas[5];
               break;
 
             default:
