@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { CategoriasSetupComponent } from '../../components/categorias-setup/categorias-setup.component';
 
 @Component({
-  selector: 'app-setup',
+  selector: 'vistaSetup',
   standalone: true,
-  imports: [],
+  imports: [CategoriasSetupComponent],
   templateUrl: './setup.component.html',
-  styleUrl: './setup.component.css'
+  styleUrl: './setup.component.css',
 })
-export class SetupComponent {
-
-}
+export class SetupComponent {}

@@ -1,0 +1,8 @@
+.alturaEntrada {
+    height: 35vh;
+}
+
+.contenedorEntrada {
+    position: absolute;
+    top: 20%;
+}

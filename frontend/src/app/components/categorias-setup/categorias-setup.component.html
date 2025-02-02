@@ -1,1 +1,19 @@
-<p>categorias-setup works!</p>
+<ng-container *ngFor="let categoria of categorias">
+    <h2 class="mt-5 pt-5 color-main2 text-uppercase"><img src="{{ 'http://localhost:9325/images/' + categoria.iconoCategoria }}" alt="" class="svgMorado2"> {{ categoria.nombreCategoria }}</h2>
+    <ul>
+        <ng-container *ngFor="let componente of categoria.componentes">
+            <li class="mt-2">
+                <a class="color-main text-uppercase" href="{{ componente.link }}" target="_blank">{{ componente.nombre }}</a>
+                <ng-container *ngIf="tieneCaracteristicas(componente)">
+                    <ng-container *ngFor="let caracteristica of componente.caracteristicas">
+                        <ul class="color-secondary mt-2 mb-2">
+                            <li>
+                                {{ caracteristica }}
+                            </li>
+                        </ul>
+                    </ng-container>
+                </ng-container>
+            </li>
+        </ng-container>
+    </ul>
+</ng-container>
