@@ -1,5 +1,5 @@
 <ng-container *ngFor="let categoria of categorias">
-    <h2 class="mt-5 pt-5 color-main2 text-uppercase"><img src="{{ 'http://localhost:9325/images/' + categoria.iconoCategoria }}" alt="" class="svgMorado2"> {{ categoria.nombreCategoria }}</h2>
+    <h2 class="mt-5 pt-5 color-main2 text-uppercase"><img src="{{ baseUrl + categoria.iconoCategoria }}" alt="" class="svgMorado2"> {{ categoria.nombreCategoria }}</h2>
     <ul>
         <ng-container *ngFor="let componente of categoria.componentes">
             <li class="mt-2">

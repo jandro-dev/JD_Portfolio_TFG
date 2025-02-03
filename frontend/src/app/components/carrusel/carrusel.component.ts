@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LogocardComponent } from '../logocard/logocard.component';
 import { ApiService } from '../../services/api.service';
+import { environments } from '../../../environments/environments';
 
 @Component({
   selector: 'componenteCarrusel',
@@ -12,6 +13,7 @@ import { ApiService } from '../../services/api.service';
 })
 export class CarruselComponent implements OnInit {
   tecnologias: any;
+  baseUrl: string = `${environments.baseUrl}/images/`;
 
   constructor(private apiService: ApiService) {}
 

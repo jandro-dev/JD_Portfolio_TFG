@@ -3,7 +3,7 @@
         <div *ngFor="let tecnologia of tecnologias" class="logocard">
             <componenteLogoCard 
                 [bgColor]="'#410753'" 
-                [urlImagen]="'http://localhost:9325/images/' + tecnologia.rutaImagen" 
+                [urlImagen]="baseUrl + tecnologia.rutaImagen" 
                 [anios]="tecnologia.anios" 
                 [meses]="tecnologia.meses"/>
             <p class="text-center color-main" style="font-size: 1.2em;">{{ tecnologia.nombre }}</p>

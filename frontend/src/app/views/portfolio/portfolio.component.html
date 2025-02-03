@@ -14,7 +14,7 @@
         <ng-container *ngFor="let proyecto of proyectos">
             <ng-container *ngIf="!proyecto.colaborativo">
                 <parallaxCard
-                    [imagen]="'http://localhost:9325/images/' + proyecto.rutaImagen"
+                    [imagen]="baseUrl + proyecto.rutaImagen"
                     [titulo]="proyecto.nombre"
                     [descripcion]="proyecto.descripcion"
                     [url]="proyecto.link"
@@ -33,7 +33,7 @@
         <ng-container *ngFor="let proyecto of proyectos">
             <ng-container *ngIf="proyecto.colaborativo">
                 <parallaxCard
-                    [imagen]="'http://localhost:9325/images/' + proyecto.rutaImagen"
+                    [imagen]="baseUrl + proyecto.rutaImagen"
                     [titulo]="proyecto.nombre"
                     [descripcion]="proyecto.descripcion"
                     [url]="proyecto.link"
@@ -51,7 +51,7 @@
     <ng-container *ngIf="disenios">
         <ng-container *ngFor="let disenio of disenios">
             <parallaxCard
-                [imagen]="'http://localhost:9325/images/' + disenio.rutaImagen"
+                [imagen]="baseUrl + disenio.rutaImagen"
                 [titulo]="disenio.nombre"
                 [descripcion]="disenio.fecha"
                 [url]="disenio.link"
