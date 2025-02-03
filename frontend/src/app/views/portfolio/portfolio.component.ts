@@ -3,7 +3,7 @@ import { ContactoComponent } from '../../components/contacto/contacto.component'
 import { ParallaxCardComponent } from '../../components/parallax-card/parallax-card.component';
 import { CommonModule } from '@angular/common';
 import { ApiService } from '../../services/api.service';
-import { environments } from '../../../environments/environments';
+import { environments } from '../../../environments/environment';
 
 @Component({
   selector: 'vistaPortfolio',

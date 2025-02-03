@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LogocardComponent } from '../logocard/logocard.component';
 import { ApiService } from '../../services/api.service';
-import { environments } from '../../../environments/environments';
+import { environments } from '../../../environments/environment';
 
 @Component({
   selector: 'componenteCarrusel',

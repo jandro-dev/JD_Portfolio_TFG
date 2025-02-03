@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
-import { environments } from '../../../environments/environments';
+import { environments } from '../../../environments/environment';
 
 @Component({
   selector: 'categoriasSetup',
