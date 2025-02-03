@@ -3,7 +3,7 @@ import { ContactoComponent } from '../../components/contacto/contacto.component'
 import { ParallaxCardComponent } from '../../components/parallax-card/parallax-card.component';
 import { CommonModule } from '@angular/common';
 import { ApiService } from '../../services/api.service';
-import { environments } from '../../../environments/environment';
+import { environment } from '../../../environments/environment.development';
 
 @Component({
   selector: 'vistaPortfolio',
@@ -15,7 +15,7 @@ import { environments } from '../../../environments/environment';
 export class PortfolioComponent implements OnInit {
   proyectos: any;
   disenios: any;
-  baseUrl: string = `${environments.baseUrl}/images/`;
+  baseUrl: string = `${environment.APIURL}/images/`;
 
   constructor(private apiService: ApiService) {}
 

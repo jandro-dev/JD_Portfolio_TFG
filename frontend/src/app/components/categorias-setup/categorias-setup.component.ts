@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from '../../services/api.service';
-import { environments } from '../../../environments/environment';
+import { environment } from '../../../environments/environment.development';
 
 @Component({
   selector: 'categoriasSetup',
@@ -13,7 +13,7 @@ import { environments } from '../../../environments/environment';
 
 export class CategoriasSetupComponent implements OnInit {
   categorias: any;
-  baseUrl: string = `${environments.baseUrl}/images/`;
+  baseUrl: string = `${environment.APIURL}/images/`;
 
   constructor(private apiService: ApiService) {}
 
