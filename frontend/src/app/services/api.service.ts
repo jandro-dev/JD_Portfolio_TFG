@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environments } from '../../environments/environment';
+import { environment } from '../../environments/environment.development';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ApiService {
   // Consumicion de la api de springboot
-  private url = `${environments.baseUrl}/api`;
+  private url = `${environment.APIURL}/api`;
 
   constructor(private http: HttpClient) {}
 
