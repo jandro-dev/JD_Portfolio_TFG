@@ -11,6 +11,7 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registro) {
         registro.addMapping("/api/**")
                 .allowedOrigins("https://jandrodev.vercel.app")
+                .allowedOrigins("https://jdportfoliotfg.pages.dev")
                 .allowedMethods("GET")
                 .allowedHeaders("*");
     }
