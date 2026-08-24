@@ -10,8 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registro) {
         registro.addMapping("/api/**")
-                .allowedOrigins("https://jandrodev.vercel.app")
-                .allowedOrigins("https://jdportfoliotfg.pages.dev")
+                .allowedOrigins("https://jdportfolio.pages.dev")
                 .allowedMethods("GET")
                 .allowedHeaders("*");
     }
