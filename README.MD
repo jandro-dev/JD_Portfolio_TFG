@@ -1,20 +1,34 @@
-# Proyecto Portfolio JandroDev
+<div align="center">
 
-## Seguimiento del proyecto
+## Portfolio Developer – Trabajo de Fin de Grado
 
-### Back-End Springboot
+Portfolio de marca developer desarrollado como parte del **Trabajo de Fin de Grado (TFG)** que muestra información profesional, habilidades, proyectos y formas de contacto a través de una plataforma web moderna y responsive.
 
-- [x] Crear proyecto springboot con dependencias minimas de lombok, spring web y spring mongodb
-  
-- [x] Montar la api estructurada desde mongodb incluyendo las rutas de las imagenes ( referencia: **jdportfolio.onrender.com** )*
+</div>
 
-* En proyectos hacer un campo boolean para colaborativos
-* En setup recordar que tiene componentes (array de objetos) y caracteristicas dentro de componentes (array de strings)
-  
-- [x] Coger referencias del proyecto jandrodev-portfolio y de https://youtu.be/kZwu85plcpM para montar el backend
+<br>
 
-- [x] Probar la obtencion de datos de tecnologias, proyectos, diseños y categoria(setup)
+<details>
+<summary>Contenido del TFG</summary>
 
-### Front-End Angular
+- [LinkHub](https://github.com/jandro-dev/JD_LinkHub_TFG.git)
+- [Portfolio](#portfolio-developer--trabajo-de-fin-de-grado)
+- [Portal Template](https://github.com/jandro-dev/Portal_Template_TFG)
 
-- [ ] Adaptar jandrodev-angular portfolio al nuevo backend
+</details>
+
+
+### Tecnologías utilizadas
+
+- **Angular**
+- **Springboott**
+- **MongoDB**
+- **TypeScript**
+- **Bootstrap**
+
+### Funcionalidades principales
+
+- **Gestión de información**: los datos se gestionan mediante una API.
+- **Base de datos**: almacenamiento de la información de tecnologias, proyectos, imagenes...
+- **Diseño responsive**: adaptación a dispositivos móviles, tablets y ordenadores.
+- **Interfaz moderna e intuitiva**: navegación clara y organizada.
