@@ -21,7 +21,7 @@ Portfolio de marca developer desarrollado como parte del **Trabajo de Fin de Gra
 ### Tecnologías utilizadas
 
 - **Angular**
-- **Springboott**
+- **Springboot**
 - **MongoDB**
 - **TypeScript**
 - **Bootstrap**
